@@ -1,0 +1,7 @@
+.env
+/.idea
+*.csv
+*.h5
+*.zip
+*.png
+*.pdn

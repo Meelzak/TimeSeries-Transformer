@@ -1,0 +1,34 @@
+[tool.poetry]
+name = "database connection code"
+version = "0.1.0"
+description = ""
+authors = ["Meelzak <lcmeels@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pandas = "^1.5.3"
+python-dotenv = "0.21.0"
+pyodbc = "^4.0.35"
+SQLAlchemy = "1.4.45"
+darts = "^0.23.1"
+ipykernel = "^6.21.1"
+plotly = "^5.13.0"
+IProgress = "^0.4"
+cuda-python = "11.7"
+torch = {url = "https://download.pytorch.org/whl/cu116/torch-1.12.1%2Bcu116-cp310-cp310-win_amd64.whl"}
+torchaudio = {url = "https://download.pytorch.org/whl/cu116/torchaudio-0.12.1%2Bcu116-cp310-cp310-win_amd64.whl"}
+torchvision = {url = "https://download.pytorch.org/whl/cu116/torchvision-0.13.1%2Bcu116-cp310-cp310-win_amd64.whl"}
+seaborn = "^0.12.2"
+pypots = "^0.0.9"
+nni = "^2.10"
+h5py = "^3.8.0"
+transformers = "^4.26.1"
+reformer-pytorch = "^1.4.4"
+fancyimpute = "^0.7.0"
+sympy = "^1.11.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
