@@ -50,9 +50,6 @@ def train_test_split(sensor_data:pd.DataFrame, missing_rate : float)->Tuple[np.n
     X_intact_train, X_intact_test = X_intact[:-int(len(X_intact)*0.3)], X_intact[-int(len(X_intact)*0.3):-int(len(X_intact)*0.1)]
     X_missing_train, X_missing_test = X_missing[:-int(len(X_missing) * 0.3)], X_missing[-int(len(X_intact)*0.3):-int(len(X_intact)*0.1)]
 
-    #only for mediaan dataset (comment for other datasets)
-    X_intact_train, X_intact_test = X_intact[:3200], X_intact[3200:3200+900]
-    X_missing_train, X_missing_test = X_missing[:3200], X_missing[3200:3200+900]
 
     index = sensor_data.index[:len(X_missing_train)+len(X_intact_test)]
 
